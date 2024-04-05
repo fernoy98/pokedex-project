@@ -3,7 +3,7 @@ import reflex as rx
 
 from pokedex.styles.fonts import Font, FontWeight
 
-MAX_WIDTH = "900px"
+MAX_WIDTH = "1140px"
 IMAGE_HEIGHT = "200px"
 
 
@@ -24,17 +24,12 @@ class Size(Enum):
 
 
 STYLESHEETS = [
-    "/fonts/Munro.ttf",
-    "/fonts/MunroNarrow.ttf",
-    "/fonts/MunroSmall.ttf",
-    "/fonts/Pokemon.ttf",
-    "/fonts/PokemonBold.ttf",
     "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css",
-    "/css/style.css"
 ]
 
 
 BASE_STYLE = {
+    "font_size": EmSize.DEFAULT.value,
     "font_family": Font.DEFAULT.value,
     "font_weight": FontWeight.LIGHT.value,
     rx.heading: {
