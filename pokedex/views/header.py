@@ -1,5 +1,5 @@
 import reflex as rx
-from pokedex.components.card import detect_img
+from pokedex.components.card import get_pokemon
 
 
 def header() -> rx.Component:
